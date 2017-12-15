@@ -1,0 +1,183 @@
+h1,
+h2,
+h3 {
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+}
+.intro p {
+  font-family: Futura, Helvetica, Arial, sans-serif;
+font-size: 3em;
+font-weight: 100;
+}
+.nav {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.carousel {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+/**** Contact page ****/
+.main{
+	background-image: url("../img/contact.jpg");
+	background-size: cover;
+	 background-attachment: fixed;
+
+    color: white;
+
+    padding:100px;
+    padding-top: 50px;
+    height: ;
+}
+.abt-me h1{
+	color:white;
+    text-align:center;
+    margin-top: 40px;
+    font-size: 3em;
+    text-transform: uppercase;
+}
+.abt-me p{
+	text-align: center;
+	color:white;
+	line-height: 30px;
+	font-size: 2em;
+	margin-top: 40px;
+    font-family: Verdana, Helvetica, Arial, sans-serif;
+}
+.email p{
+	font-style: italic;
+	font-size: 2em;
+	text-align: center;
+	color:white;
+	font-weight: 100;
+	margin-top: 40px;
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+}
+.cell-no p{
+	color: white;
+	text-align: center;
+	font-size:2em;
+	font-weight: 100;
+	margin-top: 40px;
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+}
+.adds{
+	font-style: italic;
+	font-size: 2em;
+	text-align: center;
+	color:white;
+	font-weight: 100;
+	margin-top: 40px;
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+}
+.main{
+	padding-top:100px;
+	border: 5px solid black;
+}
+
+.projectName a  {
+    text-transform: uppercase;
+    color: grey;
+}
+
+.projectName a:hover{
+    color: white;
+
+    -webkit-transition: color 2s;
+}
+nav a:hover {
+    
+     text-decoration: none;
+     -webkit-transition: color 600ms;
+}
+hr {color:white;
+    text-align: center;
+    width:250px;}
+p span:hover{
+	color: grey;
+    text-decoration: none;
+    -webkit-transition: color 2s;
+}
+/**** end Contact page ****/
+
+/* about page*/
+
+.header h1 {
+  text-align: center;
+}
+
+
+
+.intro p {
+font-family: Futura, Helvetica, Arial, sans-serif;
+font-size: 3em;
+font-weight: 100;
+-webkit-margin-before: 0;
+}
+.skills h3{
+text-align: center;
+text-transform: uppercase;
+
+}
+#skill-list {
+  margin-left: 50px;
+}
+body {
+  background-color: #fffeea;
+  color: #34495e;
+  position: relative;
+  padding-top:50px; 
+}
+.skills{
+	background-color: #5AD4C2;
+}
+/* about page end */
+
+.anchor {
+  padding-top: 70px;
+}
+#work{
+	padding-top: 70px;
+	margin-bottom: 50px;
+}
+#contact{
+	padding-top: 40px;
+	margin-bottom: 50px;
+}
+#faq{
+	padding-top: 70px;
+	margin-left: -15px;
+  margin-right: -15px;
+}
+footer{
+	
+	height: 100px;
+	background:black;
+}
+ footer p{
+	
+	font-size: 2em;
+margin-top: 25px;
+	color: white;
+	
+	text-align: left;
+	margin-left: 12px;
+	
+	
+}
+#about{
+	padding-top:70px;
+	
+	
+}
+ .twitter-follow-button{
+	margin-top: 40px;
+	float: right;
+	margin-right: 12px;
+
+	
+}
+.form-control{width: 100%;}
+.btn:hover{background: grey;
+	color:white;
+transition: 1s;}
