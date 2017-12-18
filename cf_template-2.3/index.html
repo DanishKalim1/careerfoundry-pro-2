@@ -18,6 +18,7 @@
     <![endif]-->
   </head>
   <body data-spy="scroll" data-target=".navbar">
+  <div class="maindiv">
    <div class="container-fluid" id="index">
     <nav class="navbar navbar-inverse navbar-fixed-top " role="navigation">
   <div class="container-fluid">
@@ -86,7 +87,7 @@
 </a>
 </div><!--slider end-->
  </div><!--end container fluid-->
-<div class="container-fluid"  id="about" class="parallax-window" data-parallax="scroll" data-image-src="img/about.jpg" ><!--about-->
+<div class="container-fluid"  id="about" class="parallax-window" data-parallax="scroll" data-image-src="img/about.png" ><!--about-->
 <div class ="header" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="700"><h1>About Me</h1></div>
    <div class= "row">      
      <div class="col-md-3 col-xs-12 col-sm-6 col-lg-4 intro" data-aos="zoom-in-down" data-aos-duration="2000" data-aos-delay="1200">
@@ -115,18 +116,18 @@
 <div class="row">
   <div class="col-md-4" data-aos="zoom-in-up" data-aos-duration="1300">
     <h2>Portfolio concept</h2>
-    <p>My concept behind making this portfolio is to show my work which i have done previosly so that one can easily understand about my experties and skills. </p>
-    <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+    <p>My concept behind making this <a href="#" title="More information" id="item1">portfolio</a> is to show my work which i have done previosly so that one can easily understand about my experties and skills. </p>
+    <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Tooltip on top">View details &raquo;</button>
   </div><!-- /col -->
   <div class="col-md-4" data-aos="zoom-in-down" data-aos-duration="1400">
     <h2>Project Goals</h2>
-    <p> My project goal is to finish every assignment on time and learn new thing accordingly.Its a fun project and full of learning i find bundle of new things to learn in every exercise.Its exciting project. </p>
-    <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+    <p> My project goal is to finish every assignment on time and learn new thing accordingly.Its a fun project and full of learning i find bundle of new things to learn in every <a href="#" title="More information" id="item1"> exercise</a>.Its exciting project. </p>
+    <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">View details &raquo;</button>
  </div><!-- /col -->
   <div class="col-md-4" data-aos="zoom-in-up" data-aos-duration="1500">
     <h2>Course Goals</h2>
-    <p> I am a BioMedical engineer but two years before i fell in love with front-end programming because programming changes your ideas into reality.Finally i decided to change my career.On compilition of this course i will join any good software company where i can polish my skills to expert level and i intend to work as freelancer as well.</p>
-    <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+    <p> I am a <a href="#" title="More information" id="item1">BioMedical</a> engineer but two years before i fell in love with front-end programming because programming changes your ideas into reality.Finally i decided to change my career.On compilition of this course i will join any good software company where i can polish my skills to expert level and i intend to work as freelancer as well.</p>
+    <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Tooltip on right">View details &raquo;</button>
   </div><!-- /col -->
 </div><!-- /row -->
 <hr>
@@ -268,6 +269,7 @@
   <div id="fb-root"></div>
   <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="standard" data-action="like" data-size="large" data-show-faces="true" data-share="true"></div>
 </footer><!--footer ends-->
+</div><!--wrapper end-->
    <!-- ============================= -->
     <!-- All your JavaScript comes now -->
     <!-- ============================= -->
@@ -291,5 +293,15 @@
 <script >AOS.init();</script>
 <!-- Can place script tags with JavaScript files here -->
 <script src="js/parallax.min.js"></script>
+<script>
+ $(function () {
+   $('#[insert your tooltip ID here]').tooltip();
+ });
+</script>
+<script>
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip();
+  });
+</script>
 </body>
 </html>

@@ -149,9 +149,7 @@ margin-left: 12px;
 #about{
 padding-top:70px;
 }
-#about p, h1, h2, h3{
-color: white;
-}
+
 .twitter-follow-button{
 margin-top: 40px;
 float: right;
@@ -188,4 +186,7 @@ padding: 10px;
 .parallax-window {
 min-height: 400px;
 background: transparent;
+}
+.maindiv{
+overflow: -webkit-paged-x;
 }
