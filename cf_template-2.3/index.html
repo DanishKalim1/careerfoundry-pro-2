@@ -179,8 +179,9 @@
 <div class="form-group">
   <label for="message">*Message</label>
   <textarea placeholder="Your message here" class="message-box form-control" id="message" required="required" maxlength="300" title="Enter message" name="message"></textarea>
+  <p id ="visible-comment"></p>
 </div>
-<button type="submit" class="btn btn-default">Submit</button>
+<button id="button" type="submit" class="btn btn-default">Submit</button>
 <div id ="get_data"></div>
 </form>
       </div>
@@ -279,34 +280,11 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Bootstrap core JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-   <script type="text/javascript">
-     var $root = $('html, body');
-     $('.navbar-nav a').click(function() {
-      var href = $.attr(this, 'href');
-      $root.animate({
-      scrollTop: $(href).offset().top
-      }, 2000, function () {
-       window.location.hash = href;
-      });
-       return false;
-      });
-</script>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-<script src="js/aos.js"></script>
-<script >AOS.init();</script>
 <!-- Can place script tags with JavaScript files here -->
+<!--aos animation-->
+<script src="js/aos.js"></script>
 <script src="js/parallax.min.js"></script>
-<script>
- $(function () {
-   $('#[insert your tooltip ID here]').tooltip();
- });
-</script>
-<script>
-  $(function () {
-    $('[data-toggle="tooltip"]').tooltip();
-  });
-</script>
-<script src="js/javascript.js">
-</script>
+<!--javascript file linked-->
+<script src="js/javascript.js"></script>
 </body>
 </html>
