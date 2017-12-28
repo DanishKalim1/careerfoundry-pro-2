@@ -110,3 +110,6 @@ background:transparent;
 .maindiv{
 overflow:-webkit-paged-x;
 }
+#char-count p{
+color: white;
+}

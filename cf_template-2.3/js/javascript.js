@@ -12,7 +12,6 @@ var $root = $('html, body');
  //twitter function
  !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
 //aos animation function
-
 AOS.init();
 //tooltip function
  $(function () {
@@ -38,14 +37,39 @@ $(document).ready(function(){
 });
 */
 //textarea border
-$(".message-box").css("border", "2px solid red");
 //textarea background
 $(".message-box").css("background", "pink");
 //function to append and turn to uppercase
 $("#button").on("click", function() {
-  var comment = $('.message-box').val().toUpperCase();
-    $('#visible-comment').html(comment);
-    $("#visible-comment").css("background", "teal");
-    $('.message-box').hide();
+var comment = $('.message-box').val().toUpperCase();
+  if($(".message-box").val() === ""){
+     $(".message-box").css("border", "2px solid red");
+     $('#visible-comment').html(comment).append("<br>Please fill the message");
+   }
+    else{
+     $("#visible-comment").html(comment).append("<br>Thanks we will reply you soon!");
+     $('.message-box').hide();
   return false;
+}
 });
+//character count
+$(".message-box").on("keyup", function() {
+    console.log("keyup happened"); 
+    var textlength = 3;
+    var text = "string";
+    var charCount = $(".message-box").val().length;
+    console.log(charCount);
+    $("#char-count").html(charCount);
+     //conditional
+    if (charCount > 50) {
+        //will turnto red if char-count gets above 50
+        $("#char-count").css({"color": "red", "font-size": "18px"});
+    } else {
+        //under 50 character it remain white
+        $("#char-count").css({"color": "white", "font-size": "18px"});
+    };
+});
+//end of document.ready here
+
+
+
