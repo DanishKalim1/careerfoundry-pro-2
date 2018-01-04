@@ -95,3 +95,18 @@ var images = $("#work img");
 });
   };
 });
+//google map
+var map;
+  function initMap() {
+    map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat: 25.396796, lng:  68.386886},
+    zoom: 15
+  });
+//map with marker
+  var myLoc = {lat: 25.396796, lng:  68.386886};
+  var marker = new google.maps.Marker({
+    position: myLoc,
+    map: map,
+    title: 'Phulali,Hyd,Pak.'
+    });
+  }

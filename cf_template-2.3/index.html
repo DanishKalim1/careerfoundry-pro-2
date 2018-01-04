@@ -93,7 +93,7 @@
 <div class ="header" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="700"><h1>About Me</h1></div>
    <div class= "row">      
      <div class="col-md-3 col-xs-12 col-sm-6 col-lg-4 intro" data-aos="zoom-in-down" data-aos-duration="2000" data-aos-delay="1200">
-      <img src="img/kitten.jpg" alt="Kitten" class="img-responsive">
+      <img src="img/dani.jpg" alt="Danish" class="img-responsive img-rounded dani">
      </div><!-- end image -->
   <div class="col-md-3 col-xs-12 col-sm-6 col-lg-4" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="900">
     <h3>Introduction</h3>
@@ -140,12 +140,15 @@
 </div><!-- / container -->
 <div class="container-fluid main " id="contact" class="parallax-window" data-parallax="scroll" data-image-src="img/contact.jpg" ><!--contact start here-->
 <div class="container"  ><!--form-->
+
   <div class="row">
     <div class="col-md-4 col-xs-12 col-sm-6 col-lg-4">
-     <h1>Contact</h1>
+     <!-- <iframe width="600" height="450" frameborder="0" style="border:0" async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCXbToUBr4RtKipjeJBaJAgfmgYAwTOL0U&callback=initMap" allowfullscreen></iframe> -->
+    <h1>Contact</h1>
      <p><span class="glyphicon glyphicon-phone "></span>Phone:0333-2743878</p>
      <p><span class="glyphicon glyphicon-envelope"></span> Email:engrdanishkalim@gmail.com</p>
      <p><span class="glyphicon glyphicon-home "></span>Address: Sindh Hydeabad Pakistan</p>
+    <div id="map"></div>
    </div>
 <div class="col-md-8 col-xs-12 col-sm-6 col-lg-6">
   <h1>Say hello.</h1>
@@ -163,7 +166,7 @@
         <input type="number" class="form-control" placeholder="Enter your Phone Number" id="phone"  title="Enter Phone number (optional) " name="number">
     </div>
   </div>
-</div>
+  </div>
 <div class="form-group">
   <label for="email">*Email address</label>
   <input type="email" class="form-control" placeholder="Your email address here" id="email" required="required" minlength="10" title="Enter email address" name="email">
@@ -176,7 +179,6 @@
 <p id="char-count"></p>
 </div>
 <button id="button" type="submit" class="btn btn-default">Submit</button>
-
 </form>
       </div>
     </div>
@@ -279,6 +281,10 @@
 <script src="js/parallax.min.js"></script>
 <!--javascript file linked-->
 <script src="js/work.js"></script>
+<!--google map api-->
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCXbToUBr4RtKipjeJBaJAgfmgYAwTOL0U&callback=initMap">
+</script>
 <script src="js/javascript.js"></script>
 </body>
 </html>

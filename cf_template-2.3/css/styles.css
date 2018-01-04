@@ -48,7 +48,7 @@ margin-bottom:50px;
 padding-top:40px;
 padding-bottom:40px;
 color:white;
-height: 700px;
+
 }
 #faq{
 padding-top:70px;
@@ -141,3 +141,9 @@ color: white;
 .proj-title {
   font-weight:100;
 }
+/*google map*/
+  #map {
+  height: 180px;
+  width: 100%;
+}
+.dani{height: 300px;}
